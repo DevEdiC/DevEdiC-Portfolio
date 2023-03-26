@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr1: #ffffff;
+    --clr2: #cfcfcf;
+    --clr3: #383838;
+    --clr4: #202020;
+    --clr5: #000000;
+}
+
+body {
+    background-image: url(/public/images/background-5035258_1920.jpg);
+    background-attachment: fixed;
+    font-family: 'Barlow Condensed', sans-serif;
+}  
+
+/* Header section */
+
+.navbar-brand {
+    font-size: 1.7em;
+    color: var(--clr2);
+}
+
+.nav-link {
+    font-size: 1.7em;
+    color: var(--clr2);
+}
+
+/* Presentation */
+
+.container-presentation {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.presentation-title {
+    text-align: center;
+}
+
+.presentation-title h2 {
+    font-size: 5em;
+    color: var(--clr2);
+}
+
+.presentation-title p {
+    font-size: 2em;
+    color: var(--clr3);
+    border-bottom: 1px solid var(--clr2);
+}
+
+.presentation-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.presentation-icons a i{
+    font-size: 3rem;
+}
+
+.presentation-icons a i:hover {
+    filter: brightness(1.2);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* About me section */
+
+.container-aboutme {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}   
+
+.container-aboutme_photo {
+    grid-column: 1 / 2;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-aboutme_photo .photo {
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+    border: 2px solid var(--clr2);
+}
+
+.container-aboutme_information {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    flex-wrap: wrap;
+    backdrop-filter: blur(5px);
+    height: 500px;
+    width: 820px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 var(--clr2);
+}
+
+.container-aboutme_information .aboutme-content {
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container-aboutme_information .aboutme-content .text h1 {
+    color: var(--clr1);
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.container-aboutme_information .aboutme-content .text p {
+    color: var(--clr2);
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.container-aboutme_information .aboutme-snetworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Information Section */
+
+.container-information {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container-information_content {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 var(--clr2);
+}
+
+.container-information_photo {
+    grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive for mobile */
+
+@media (max-width: 425px) {
+
+}
